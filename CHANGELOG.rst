@@ -2,6 +2,11 @@
 Changelog for package pal_urdf_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.3.3 (2025-10-22)
+------------------
+* Fix gazebo ft sensor name
+* Contributors: sofieblankers
+
 2.3.2 (2025-08-28)
 ------------------
 * Typo in t265 urdf
