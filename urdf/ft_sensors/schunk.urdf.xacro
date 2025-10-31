@@ -78,7 +78,7 @@
     </joint>
 
     <!-- Gazebo config-->
-    <xacro:force_torque_sensor_gazebo name="wrist_ft" update_rate="100"/>
+    <xacro:force_torque_sensor_gazebo name="${name}_ft" update_rate="100"/>
 
   </xacro:macro>
 
