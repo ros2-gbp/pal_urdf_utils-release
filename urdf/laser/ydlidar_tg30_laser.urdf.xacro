@@ -25,14 +25,14 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pal_urdf_utils/meshes/laser/ydlidar.dae"/>
+          <mesh filename="package://pal_urdf_utils/meshes/laser/ydlidar.stl"/>
         </geometry>
         <material name="DarkGrey"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <mesh filename="package://pal_urdf_utils/meshes/laser/ydlidar.dae"/>
+          <mesh filename="package://pal_urdf_utils/meshes/laser/ydlidar.stl"/>
         </geometry>
       </collision>
     </link>
