@@ -24,6 +24,7 @@
       <sensor name="${name}_sensor" type="imu">
         <always_on>1</always_on>
         <update_rate>${update_rate}</update_rate>
+        <topic>${name}</topic>
         <imu>
           <noise>
             <type>gaussian</type>
@@ -41,13 +42,18 @@
             </accel>
           </noise>
         </imu>
-        <plugin name="${name}" filename="libgazebo_ros_imu_sensor.so">
-          <ros>
-            <namespace>${namespace}</namespace>
-            <!-- publish to /imu/data -->
-            <remapping>~/out:=${name}</remapping>
-          </ros>
-        </plugin>
+        <xacro:if value="${gazebo_version == 'classic'}">
+          <plugin name="${name}" filename="libgazebo_ros_imu_sensor.so">
+            <ros>
+              <namespace>${namespace}</namespace>
+              <!-- publish to /imu/data -->
+              <remapping>~/out:=${name}</remapping>
+            </ros>
+          </plugin>
+        </xacro:if>
+        <xacro:if value="${gazebo_version == 'gazebo'}">
+          <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"></plugin>
+        </xacro:if>
       </sensor>
     </gazebo>
 

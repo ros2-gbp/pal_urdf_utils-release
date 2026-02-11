@@ -18,26 +18,41 @@
   <xacro:macro name="imu_sensor_gazebo" params="update_rate">
 
     <gazebo reference="imu_link">
+        <gravity>true</gravity>
         <sensor name="imu_sensor" type="imu">
-        <always_on>1</always_on>
-        <update_rate>${update_rate}</update_rate>
-        <imu>
-            <noise>
-            <type>gaussian</type>
-            <rate>
-                <mean>0.0</mean>
-                <stddev>0.0</stddev>
-                <bias_mean>0.000000</bias_mean>
-                <bias_stddev>0.0000008</bias_stddev>
-            </rate>
-            <accel>
-                <mean>0.0</mean>
-                <stddev>0.0</stddev>
-                <bias_mean>0.0</bias_mean>
-                <bias_stddev>0.000</bias_stddev>
-            </accel>  
-            </noise>
-        </imu>
+          <always_on>true</always_on>
+          <update_rate>${update_rate}</update_rate>
+          <topic>imu</topic>
+          <imu>
+              <noise>
+                <type>gaussian</type>
+                <rate>
+                    <mean>0.0</mean>
+                    <stddev>0.0</stddev>
+                    <bias_mean>0.000000</bias_mean>
+                    <bias_stddev>0.0000008</bias_stddev>
+                </rate>
+                <accel>
+                    <mean>0.0</mean>
+                    <stddev>0.0</stddev>
+                    <bias_mean>0.0</bias_mean>
+                    <bias_stddev>0.000</bias_stddev>
+                </accel>  
+              </noise>
+              <initialOrientationAsReference>false</initialOrientationAsReference>
+          </imu>
+          <xacro:if value="${gazebo_version == 'classic'}">
+            <plugin name="gazebo_ros_imu_sensor" filename="libgazebo_ros_imu_sensor.so">
+              <ros>
+                <namespace>/talos</namespace>
+                <remapping>~/out:=imu</remapping>
+              </ros>
+              <initial_orientation_as_reference>false</initial_orientation_as_reference>
+            </plugin>
+          </xacro:if>
+          <xacro:if value="${gazebo_version == 'gazebo'}">
+            <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"></plugin>
+          </xacro:if>
         </sensor>
     </gazebo>
 

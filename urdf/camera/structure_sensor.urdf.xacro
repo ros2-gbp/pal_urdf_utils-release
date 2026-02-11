@@ -86,7 +86,7 @@
     <link name="${name}_depth_optical_frame"/>
 
     <!-- extensions -->
-    <xacro:structure_sensor_rgbd_camera_gazebo name="${name}" />
+    <xacro:structure_sensor_rgbd_camera_gazebo name="${name}"/>
 
   </xacro:macro>
 
