@@ -2,6 +2,72 @@
 Changelog for package pal_urdf_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.5.4 (2026-01-29)
+------------------
+* Use package instead of find for meshes lookup
+  This change avoids errors when visualizing the robot in rviz2 from a
+  remote host instead of directly inside the robot
+* Contributors: Noel Jimenez
+
+2.5.3 (2026-01-26)
+------------------
+* use radians instead of degree to define angles
+* Reapply "Merge branch 'tun/feat/update-sensor-gazebo' into 'humble-devel'"
+  This reverts commit 1cb56a2ae5fe6d407cfa800d7deb3553e43aac79.
+* Contributors: Noel Jimenez, thomasung
+
+2.5.2 (2026-01-23)
+------------------
+* Revert "Merge branch 'tun/feat/update-sensor-gazebo' into 'humble-devel'"
+  This reverts merge request !26
+* Contributors: Noel Jimenez
+
+2.5.1 (2026-01-22)
+------------------
+* small fix to prevent ghost obstacles
+* remove gazebo version check property
+* avoid duplicate definition of the camera config
+* remove gazebo version parameter from macros
+* set gazebo default version to classic for structure sensor
+* migrate structure sensor to new gazebo
+* add gazebo parameter to sick tim 571
+* Contributors: thomasung
+
+2.5.0 (2026-01-09)
+------------------
+* Migrate openni camera to new gazebo
+* Contributors: Noel Jimenez
+
+2.4.1 (2025-12-12)
+------------------
+* changing name mesh
+* fixing laser
+* Contributors: susannamastromauro
+
+2.4.0 (2025-12-09)
+------------------
+* Adapt interaction_sensors and laser for new gazebo
+* Contributors: Noel Jimenez
+
+2.3.6 (2025-12-05)
+------------------
+* Fix xtion_pro_live mesh paths
+* Use find for searching packages for meshes
+* Contributors: Noel Jimenez
+
+2.3.5 (2025-11-25)
+------------------
+* Merge branch 'omm/talos_imu_fix' into 'humble-devel'
+  Added needed config so IMU follows ROS 2 conventions
+  See merge request robots/pal_urdf_utils!21
+* Added needed config so IMU follows ROS 2 conventions
+* Contributors: Sai Kishor Kothakota, Óscar Martínez
+
+2.3.4 (2025-11-11)
+------------------
+* Fix FT orientation
+* Contributors: thomaspeyrucain
+
 2.3.3 (2025-10-22)
 ------------------
 * Fix gazebo ft sensor name
