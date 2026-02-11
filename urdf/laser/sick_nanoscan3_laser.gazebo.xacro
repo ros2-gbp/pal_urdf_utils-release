@@ -18,10 +18,12 @@
 
   <xacro:macro name="sick_nanoscan3_laser_gazebo" params="name ros_topic update_rate min_angle max_angle">
     <gazebo reference="${name}_link">
-      <sensor type="gpu_ray" name="${name}">
-        <pose>0 0 0 0 0 0</pose>
+      <sensor name="${name}" type="gpu_lidar">
         <update_rate>${update_rate}</update_rate>
+        <topic>${ros_topic}</topic>
+        <gz_frame_id>${name}_link</gz_frame_id>
         <visualize>true</visualize>
+        <always_on>true</always_on>
         <ray>
           <scan>
             <horizontal>
@@ -38,13 +40,20 @@
             <resolution>0.01</resolution>
           </range>
         </ray>
-        <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_sick_laser">
-          <gaussianNoise>0.03</gaussianNoise>
-          <alwaysOn>true</alwaysOn>
-          <updateRate>${update_rate}</updateRate>
-          <topicName>${ros_topic}</topicName>
-          <frameName>${name}_link</frameName>
-        </plugin>
+        <xacro:if value="${gazebo_version == 'classic'}">
+          <plugin filename="libgazebo_ros_laser.so" name="gazebo_ros_sick_laser">
+            <gaussianNoise>0.03</gaussianNoise>
+            <alwaysOn>true</alwaysOn>
+            <updateRate>${update_rate}</updateRate>
+            <topicName>${ros_topic}</topicName>
+            <frameName>${name}_link</frameName>
+          </plugin>
+        </xacro:if>
+        <xacro:if value="${gazebo_version == 'gazebo'}">
+          <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+            <render_engine>ogre2</render_engine>
+          </plugin>
+        </xacro:if>
       </sensor>
       <material>Gazebo/DarkGrey</material>
     </gazebo>
