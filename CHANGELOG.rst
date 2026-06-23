@@ -2,6 +2,60 @@
 Changelog for package pal_urdf_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.9.1 (2026-06-15)
+------------------
+* Fix/aca/imu warning
+* Contributors: andreacapodacqua
+
+2.9.0 (2026-06-03)
+------------------
+* sick picoscan150core
+* added picoscan mesh
+* renamed to picoscan150core
+* mesh visualization
+* added sick picoscan
+* Contributors: Andrea Capodacqua, andreacapodacqua
+
+2.8.0 (2026-05-29)
+------------------
+* added airy96 lidar
+* added robosense e1r
+* Contributors: Andrea Capodacqua, andreacapodacqua
+
+2.7.1 (2026-05-19)
+------------------
+* uniform robot and simulation camera topics names
+* Contributors: martinaannicelli
+
+2.7.0 (2026-05-15)
+------------------
+* Uniformed simulation topics' names to the real robot ones
+* Contributors: martinaannicelli
+
+2.6.2 (2026-04-28)
+------------------
+* Fix dependencies on realsense2
+* Contributors: Aina
+
+2.6.1 (2026-04-07)
+------------------
+* Temporary fix for realsense mesh
+* Contributors: Aina
+
+2.6.0 (2026-03-30)
+------------------
+* Port realsense D435 and D455 to new Gazebo
+* update depth camera
+* New gazebo
+* Contributors: thomas.peyrucain, thomaspeyrucain
+
+2.5.5 (2026-03-11)
+------------------
+* remove system plugin from talos imu
+* remove sensor plugin from all laser xacro gazebo
+* remove sensors system plugin from model declaration
+* Contributors: thomasung
+
 2.5.4 (2026-01-29)
 ------------------
 * Use package instead of find for meshes lookup
