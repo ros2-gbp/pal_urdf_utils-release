@@ -1,0 +1,307 @@
+ros-rolling-pal-urdf-utils (2.9.2-1resolute) resolute; urgency=high
+
+  * Merge branch 'add/ft_sensor/mujoco_tags' into 'humble-devel'
+    Add mujoco specific tags to the ft_sensor ros2_control config
+    See merge request robots/pal_urdf_utils!45
+  * Add mujoco specific tags to the ft_sensor ros2_control config
+  * Contributors: Sai Kishor Kothakota
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 02 Jul 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.9.1-1resolute) resolute; urgency=high
+
+  * Fix/aca/imu warning
+  * Contributors: andreacapodacqua
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Sun, 14 Jun 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.9.0-1resolute) resolute; urgency=high
+
+  * sick picoscan150core
+  * added picoscan mesh
+  * renamed to picoscan150core
+  * mesh visualization
+  * added sick picoscan
+  * Contributors: Andrea Capodacqua, andreacapodacqua
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 02 Jun 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.8.0-1resolute) resolute; urgency=high
+
+  * added airy96 lidar
+  * added robosense e1r
+  * Contributors: Andrea Capodacqua, andreacapodacqua
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 28 May 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.7.1-1resolute) resolute; urgency=high
+
+  * uniform robot and simulation camera topics names
+  * Contributors: martinaannicelli
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 18 May 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.7.0-1resolute) resolute; urgency=high
+
+  * Uniformed simulation topics' names to the real robot ones
+  * Contributors: martinaannicelli
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 14 May 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.6.2-1resolute) resolute; urgency=high
+
+  * Fix dependencies on realsense2
+  * Contributors: Aina
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 27 Apr 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.6.1-1resolute) resolute; urgency=high
+
+  * Temporary fix for realsense mesh
+  * Contributors: Aina
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 06 Apr 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.6.0-1resolute) resolute; urgency=high
+
+  * Port realsense D435 and D455 to new Gazebo
+  * update depth camera
+  * New gazebo
+  * Contributors: thomas.peyrucain, thomaspeyrucain
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Sun, 29 Mar 2026 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.5-1resolute) resolute; urgency=high
+
+  * remove system plugin from talos imu
+  * remove sensor plugin from all laser xacro gazebo
+  * remove sensors system plugin from model declaration
+  * Contributors: thomasung
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 10 Mar 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.4-1resolute) resolute; urgency=high
+
+  * Use package instead of find for meshes lookup
+    This change avoids errors when visualizing the robot in rviz2 from a
+    remote host instead of directly inside the robot
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Wed, 28 Jan 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.3-1resolute) resolute; urgency=high
+
+  * use radians instead of degree to define angles
+  * Reapply "Merge branch 'tun/feat/update-sensor-gazebo' into 'humble-devel'"
+    This reverts commit 1cb56a2ae5fe6d407cfa800d7deb3553e43aac79.
+  * Contributors: Noel Jimenez, thomasung
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Sun, 25 Jan 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.2-1resolute) resolute; urgency=high
+
+  * Revert "Merge branch 'tun/feat/update-sensor-gazebo' into 'humble-devel'"
+    This reverts merge request !26
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 22 Jan 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.1-1resolute) resolute; urgency=high
+
+  * small fix to prevent ghost obstacles
+  * remove gazebo version check property
+  * avoid duplicate definition of the camera config
+  * remove gazebo version parameter from macros
+  * set gazebo default version to classic for structure sensor
+  * migrate structure sensor to new gazebo
+  * add gazebo parameter to sick tim 571
+  * Contributors: thomasung
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Wed, 21 Jan 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.5.0-1resolute) resolute; urgency=high
+
+  * Migrate openni camera to new gazebo
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 08 Jan 2026 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.4.1-1resolute) resolute; urgency=high
+
+  * changing name mesh
+  * fixing laser
+  * Contributors: susannamastromauro
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 11 Dec 2025 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.4.0-1resolute) resolute; urgency=high
+
+  * Adapt interaction_sensors and laser for new gazebo
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 08 Dec 2025 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.6-1resolute) resolute; urgency=high
+
+  * Fix xtion_pro_live mesh paths
+  * Use find for searching packages for meshes
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Thu, 04 Dec 2025 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.5-1resolute) resolute; urgency=high
+
+  * Merge branch 'omm/talos_imu_fix' into 'humble-devel'
+    Added needed config so IMU follows ROS 2 conventions
+    See merge request robots/pal_urdf_utils!21
+  * Added needed config so IMU follows ROS 2 conventions
+  * Contributors: Sai Kishor Kothakota, Óscar Martínez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 24 Nov 2025 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.4-1resolute) resolute; urgency=high
+
+  * Fix FT orientation
+  * Contributors: thomaspeyrucain
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 10 Nov 2025 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.3-1resolute) resolute; urgency=high
+
+  * Fix gazebo ft sensor name
+  * Contributors: sofieblankers
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 21 Oct 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.2-1resolute) resolute; urgency=high
+
+  * Typo in t265 urdf
+  * Contributors: antoniobrandi
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Wed, 27 Aug 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.1-1resolute) resolute; urgency=high
+
+  * Update realsense_t265.urdf.xacro
+  * Contributors: antoniobrandi
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 26 Aug 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.3.0-1resolute) resolute; urgency=high
+
+  * update mesh
+  * add realsense t265
+  * add realsense cameras gazebo
+  * uniform realsense cameras
+  * Contributors: antoniobrandi
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 26 Aug 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.2.4-1resolute) resolute; urgency=high
+
+  * Add pi utils urdf
+  * Contributors: Aina Irisarri
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 22 Jul 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.2.3-1resolute) resolute; urgency=high
+
+  * fix collision tg30
+  * fix error not visualize laser model in rviz
+  * Contributors: andreacapodacqua
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Sun, 06 Jul 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.2.2-1resolute) resolute; urgency=high
+
+  * Fix meshes paths
+  * Contributors: Aina
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 24 Jun 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.2.1-1resolute) resolute; urgency=high
+
+  * Switch to gpu_ray due to an issue with the omni_base detecting its own collision boxes
+  * Contributors: thomaspeyrucain
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 17 Jun 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.2.0-1resolute) resolute; urgency=high
+
+  * support namespaces
+  * Contributors: antoniobrandi
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 16 Jun 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.1.1-1resolute) resolute; urgency=high
+
+  * fix ydlidar params
+  * Contributors: andreacapodacqua
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Wed, 11 Jun 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.1.0-1resolute) resolute; urgency=high
+
+  * Fix path for ft_sensor
+  * Fix camera gazebo
+  * Add cameras for talos
+  * Add talos ati and imu
+  * Add meshes folder in CMake
+  * Change path fro ft_sesnors
+  * Change path for both courier bases files
+  * Restructure meshes following urdf structure
+  * Reestructure urdf sensor
+  * Add pmb3 sensors
+  * Add sensor files for ari and specific bases
+  * Add imu urdf
+  * Update year
+  * Add imu sensor
+  * Add ft sensor files from pal_sea_arm_description
+  * Update path for tiago v1 ft sensor
+  * Change path for ftsensor ros2_control xacro
+  * Move sensors to pal_urdf_utils package
+  * Contributors: Aina
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 03 Jun 2025 22:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.0.1-1resolute) resolute; urgency=high
+
+  * Add website tag
+  * Add xml version
+  * Contributors: Noel Jimenez
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Mon, 18 Dec 2023 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (2.0.0-1resolute) resolute; urgency=high
+
+  * Merge branch 'port-to-ros2' into 'humble-devel'
+    Port package.xml and CMakeLists.txt
+    See merge request robots/pal_urdf_utils!2
+  * Change branch name in contributing
+  * add contributing.md
+  * Add licence
+  * Update extensions of files to .urdf.xacro
+  * Remove ament python dependency
+  * Port package.xml and CMakeLists.txt
+  * Contributors: David ter Kuile, davidterkuile
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 21 Nov 2023 23:00:00 -0000
+
+ros-rolling-pal-urdf-utils (0.0.1-1resolute) resolute; urgency=high
+
+  * Merge branch 'feat/use_urdf_utils' into 'master'
+    Remove unecessary files + update materials
+    See merge request robots/pal_urdf_utils!1
+  * Add new color and adapt Orange
+  * Remove unecessary files + update materials
+  * wip testing
+  * fix plugin_imu
+  * wip testing
+  * add gazebo plugins
+  * project upload
+  * [empty] Initial commit
+  * Contributors: Jeremie Deray, Jordan Palacios, thomaspeyrucain
+
+ -- "Thomas Peyrucain" <thomas.peyrucain@pal-robotics.com>  Tue, 17 Oct 2023 22:00:00 -0000
+
+
