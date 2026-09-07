@@ -2,6 +2,30 @@
 Changelog for package pal_urdf_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.11.1 (2026-09-01)
+-------------------
+* adde min and max angle in macro
+* Contributors: andreacapodacqua
+
+2.11.0 (2026-08-27)
+-------------------
+* add robosense 3d lidar
+* Contributors: antoniobrandi
+
+2.10.1 (2026-08-27)
+-------------------
+* Bump CmakeList to 3.10
+* Contributors: Aina
+
+2.10.0 (2026-08-25)
+-------------------
+* use materials defined in pal_urdf_utils for camera
+* remove extra parameters not needed
+* fix close sensor tag
+* add compatibility with new gazebo
+* added description of realsense_d405
+* Contributors: Ortisa Poci
+
 2.9.2 (2026-07-03)
 ------------------
 * Merge branch 'add/ft_sensor/mujoco_tags' into 'humble-devel'
